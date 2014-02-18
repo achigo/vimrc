@@ -77,6 +77,12 @@ set statusline=%F%m%r%h%w\ [%{&ff},%{&fileencoding},%Y]%=\[ASCII=\%03.3b][HEX=\%
 "highlight StatusLine cterm=reverse ctermfg=darkblue  ctermbg=white  gui=reverse guifg=darkblue guibg=white
 
 "-------------------------
+" :help compl-omni-filetypes
+"-------------------------
+" % ctags -R -f ~/.vim/systags /usr/include /usr/local/include
+set tags+=~/.vim/systags		" using CTRL-X CTRL-O in C/C++ files
+
+"-------------------------
 " abbreviations
 "-------------------------
 ab S split
@@ -108,7 +114,8 @@ call vundle#rc()
 "
 " fugitive.vim: for Gblame, Gstatus, Gcommit
 Bundle 'git://github.com/tpope/vim-fugitive.git'
-
+Bundle 'git://github.com/msanders/snipmate.vim.git'
+"Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 " NOTE: comments after Bundle commands are not allowed.
 
 filetype plugin indent on     " end required!
