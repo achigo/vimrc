@@ -46,7 +46,6 @@ let g:colors_name = "colorful256"
  highlight MoreMsg      cterm=none    ctermfg=34  ctermbg=16  gui=none    guifg=#00af00 guibg=#000000
  highlight Title        cterm=none    ctermfg=199 ctermbg=16  gui=none    guifg=#ff00af guibg=#000000
  highlight WarningMsg   cterm=none    ctermfg=9   ctermbg=16  gui=none    guifg=#ff0000 guibg=#000000
- highlight DiffDelete   cterm=none    ctermfg=207 ctermbg=16  gui=none    guifg=#ff5fff guibg=#000000
  highlight Search       cterm=none    ctermfg=15  ctermbg=160 gui=none    guifg=#ffffff guibg=#df0000
  highlight Visual       cterm=none    ctermfg=16  ctermbg=50  gui=none    guifg=#000000 guibg=#00ffdf
  highlight Cursor       cterm=none    ctermfg=16  ctermbg=33  gui=none    guifg=#000000 guibg=#0087ff
@@ -59,7 +58,6 @@ let g:colors_name = "colorful256"
  highlight WildMenu     cterm=none    ctermfg=16  ctermbg=226 gui=none    guifg=#000000 guibg=#ffff00
  highlight FoldColumn   cterm=none    ctermfg=15  ctermbg=58  gui=none    guifg=#ffffff guibg=#5f5f00
  highlight SignColumn   cterm=none    ctermfg=16  ctermbg=28  gui=none    guifg=#000000 guibg=#008700
- highlight DiffText     cterm=none    ctermfg=16  ctermbg=34  gui=none    guifg=#000000 guibg=#00af00
  highlight StatusLineNC cterm=reverse ctermfg=131 ctermbg=15  gui=reverse guifg=#af5f5f guibg=#ffffff
  highlight VertSplit    cterm=reverse ctermfg=172 ctermbg=15  gui=reverse guifg=#df8700 guibg=#ffffff
  highlight User1        cterm=none    ctermbg=20  ctermfg=15  gui=none    guibg=#0000df guifg=#ffffff
@@ -67,6 +65,12 @@ let g:colors_name = "colorful256"
  highlight User3        cterm=none    ctermbg=20  ctermfg=46  gui=none    guibg=#0000df guifg=#00ff00
  highlight User4        cterm=none    ctermbg=20  ctermfg=50  gui=none    guibg=#0000df guifg=#00ffdf
  highlight User5        cterm=none    ctermbg=20  ctermfg=46  gui=none    guibg=#0000df guifg=#00ff00
+" highlight DiffText     cterm=none    ctermfg=16  ctermbg=34  gui=none    guifg=#000000 guibg=#00af00
+" highlight DiffDelete   cterm=none    ctermfg=207 ctermbg=16  gui=none    guifg=#ff5fff guibg=#000000
+ highlight DiffAdd      cterm=none    ctermfg=bg  ctermbg=Green   gui=none guifg=bg guibg=Green
+ highlight DiffDelete   cterm=none    ctermfg=bg  ctermbg=Red     gui=none guifg=bg guibg=Red
+ highlight DiffChange   cterm=none    ctermfg=bg  ctermbg=Yellow  gui=none guifg=bg guibg=Yellow
+ highlight DiffText     cterm=none    ctermfg=bg  ctermbg=Magenta gui=none guifg=bg guibg=Magenta
 
 " for groups introduced in version 7
 if v:version >= 700

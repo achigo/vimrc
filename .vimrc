@@ -19,7 +19,7 @@ set showmode                    " show bottom-left mode
 "set background=dark             " background color
 set nocompatible                " vim and vi compatible
 set confirm                     " confirm window
-set history=100                 " command history
+set history=300                 " command history
 set cmdheight=1                 " command bar line height
 "set expandtab                   " repaces instead of tabs
 "set list                        " show end of line $ symbol
@@ -47,9 +47,10 @@ set showmatch                   " type '(' auto insert ')'
 set shiftwidth=4                " 
 "set autoindent                  " auto indent
 "set smartindent                 " smart indent
-set tabstop=4                   " tab stop
-set softtabstop=4               " backspace delete space
+"set tabstop=4                   " tab stop
+"set softtabstop=4               " backspace delete space
 set number                      " line number
+set nowrap			" Wrap line after ENTER
 
 "-------------------------
 " windows setting
@@ -65,7 +66,7 @@ set number                      " line number
 set showcmd                     " show partial command
 set laststatus=2                " show status bar
 set ruler                       " show line and column of cursor position
-"set cursorline                  " cursor position
+set cursorline                  " cursor position
 "set cursorcolumn                " 
 
 "set statusline=%4*%<\%m%<[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[%l,%v][%p%%]
@@ -87,6 +88,18 @@ set tags+=~/.vim/systags		" using CTRL-X CTRL-O in C/C++ files
 "-------------------------
 ab S split
 ab Q quit
+
+"-------------------------
+" Key mapping
+"-------------------------
+map <F3> <ESC>:Gblame<CR>		" Gblame: use F3 => :Gblame 
+map <F6> <ESC>:TlistToggle<CR>		" TagList: use F6 => :TlistToggle
+
+"-------------------------
+" vim plugin (web link)
+"-------------------------
+" TagList: http://www.vim.org/scripts/script.php?script_id=273
+" TabBar: http://www.vim.org/scripts/script.php?script_id=1338
 
 "-------------------------
 " vundle
