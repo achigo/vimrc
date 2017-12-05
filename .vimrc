@@ -29,12 +29,9 @@ set cmdheight=1                 " command bar line height
 " search and replace
 "-------------------------
 set encoding=utf-8              " File encoding
-set fileencodings=utf-8,cp950   " File encoding
+set fileencodings=utf-8,latin1
 set termencoding=utf-8          " vim terminal encoding
 
-"-------------------------
-" search and replace
-"-------------------------
 set hlsearch                    " highlight search keyword
 set incsearch                   " jump to search keyword
 set ignorecase                  " ignore case
@@ -76,6 +73,12 @@ set statusline=%F%m%r%h%w\ [%{&ff},%{&fileencoding},%Y]%=\[ASCII=\%03.3b][HEX=\%
 "highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 "highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 "highlight StatusLine cterm=reverse ctermfg=darkblue  ctermbg=white  gui=reverse guifg=darkblue guibg=white
+
+"-------------------------
+" highlight keyword
+"-------------------------
+syntax match StorageKeyword "EXT4-fs\|mmcblk0p\|mmcblk1p\|mmc0\|mmc1\|fs_mgr\|mount\|vold\|eCryptfs\|ecryptfs"
+highlight StorageKeyword ctermfg=red guifg=#00FFFF
 
 "-------------------------
 " :help compl-omni-filetypes
